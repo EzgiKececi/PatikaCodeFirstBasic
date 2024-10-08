@@ -6,9 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-//3 büyüklerin üçüncüsü
+//3 bÃ¼yÃ¼klerin Ã¼Ã§Ã¼ncÃ¼sÃ¼
 var connectionString = builder.Configuration.GetConnectionString("default");
-//appsettingste default karþýsýndaki metni aldý
+
 
 builder.Services.AddDbContext<PatikaFirstDbContext>(options => options.UseSqlServer(connectionString));
 var app = builder.Build();
